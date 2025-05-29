@@ -1,5 +1,5 @@
 #API Endpoints
-
+https://pivot-backend-n1u5.onrender.com/
 ## Authentication
 
 ### Register new user
