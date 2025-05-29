@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Environment variables (if you add any .env file later)
+.env
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+
+# Lowdb JSON database file
+db.json
+
+# Password or secret files
+password.txt
+
+# Any other local files you want to ignore
