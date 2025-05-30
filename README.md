@@ -1,5 +1,6 @@
-#API Endpoints
+## API Endpoints
 https://pivot-backend-n1u5.onrender.com/
+
 ## Authentication
 
 ### Register new user
@@ -27,6 +28,10 @@ Content-Type: application/json
 ### Get all profiles
 
 GET /profiles
+
+### Get one profiles
+
+GET /profiles/:id
 
 ### Create a profile
 
@@ -58,7 +63,6 @@ Content-Type: application/json
 
 GET /profiles/:id/comments
 
-API Endpoints
 ### Add comment to profile
 
 POST /profiles/:id/comments
