@@ -69,7 +69,7 @@ app.get("/profiles", (req, res) => {
   res.json(profilesWithCommentCount);
 });
 
-// GET a single profile by ID (public view, hides ownerId and comments)
+// GET a single profile by ID (public view, hides ownerId)
 app.get("/profiles/:id", (req, res) => {
   const { id } = req.params;
   const profile = db.data.profiles.find(p => p.id === id);
@@ -78,10 +78,12 @@ app.get("/profiles/:id", (req, res) => {
     return res.status(404).json({ message: "Profile not found" });
   }
 
-  const { ownerId, comments, ...publicProfile } = profile;
-  const commentCount = comments ? comments.length : 0;
-  res.json({ ...publicProfile, commentCount });
+  const { ownerId, ...publicProfile } = profile;
+  const commentCount = profile.comments ? profile.comments.length : 0;
+
+  res.json({ ...publicProfile, commentCount, comments: profile.comments || [] });
 });
+
 
 
 // POST create profile (requires userId)
