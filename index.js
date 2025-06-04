@@ -62,7 +62,7 @@ app.post("/auth/login", async (req, res) => {
 // GET all profiles (public, without ownerId)
 app.get("/profiles", (req, res) => {
   const profilesWithCommentCount = db.data.profiles.map(profile => {
-    const { ownerId, comments, ...publicProfile } = profile;
+    const { ownerId, ...publicProfile } = profile;
     const commentCount = comments ? comments.length : 0;
     return { ...publicProfile, commentCount };
   });
