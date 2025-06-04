@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "GGrpFnQ4CyhRU6jQQwfxw",
+      "username": "leo",
+      "password": "$2b$10$CdDNdq14le1NbWoTbhEJLO1DBU.7unZSsnC6nDHg0FnuPYUWWhaLK"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "u9bLzVNy8GMI0n1_xYd40",
+      "name": "leo",
+      "image": "https://media.licdn.com/dms/image/v2/C5603AQEa8VOhibP2yg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1635540254502?e=1754524800&v=beta&t=9kYTO_fRFDKCu-NhFrDxMNiQTqmP9L_wOCazB51VwU0",
+      "description": "Hi, I teach at Pivot!",
+      "ownerId": "GGrpFnQ4CyhRU6jQQwfxw",
+      "comments": [
+      ]
+    }
+  ]
+}
