@@ -14,7 +14,13 @@
       "description": "Hi, I teach at Pivot!",
       "ownerId": "GGrpFnQ4CyhRU6jQQwfxw",
       "comments": [
-      ]
+        {
+          "id": "Ywjme0NB-1GJh6shIrWBa",
+          "username": "Pivot School",
+          "text": "Thanks for teaching with us!"
+        }
+      ],
+      "commentCount": 1
     }
   ]
 }
