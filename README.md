@@ -1,3 +1,6 @@
+### run command
+node index.js
+
 ## API Endpoints
 https://pivot-backend-n1u5.onrender.com/
 

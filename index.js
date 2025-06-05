@@ -63,7 +63,7 @@ app.post("/auth/login", async (req, res) => {
 app.get("/profiles", (req, res) => {
   const profilesWithCommentCount = db.data.profiles.map(profile => {
     const { ownerId, ...publicProfile } = profile;
-    const commentCount = comments ? comments.length : 0;
+    const commentCount = profile.comments ? profile.comments.length : 0;
     return { ...publicProfile, commentCount };
   });
   res.json(profilesWithCommentCount);
